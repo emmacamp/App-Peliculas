@@ -30,7 +30,7 @@ function index() {
 			<div className='Navbar'>
 				<Link to={`/`}>
 					<div className='Navbar__logo'>
-						<span>HFLJ Movies</span>
+						<span>Moflix</span>
 					</div>
 				</Link>
 				<div className='Navbar__search'>
