@@ -21,7 +21,7 @@ function index({ type }) {
       alert("Debe de llenar todos los campos");
       return;
     }
-    axios.post('https://proyectowebfinal-backend.herokuapp.com/user/' + typeURL, form).then(res => {
+    axios.post('http://localhost:4000/user/' + typeURL, form).then(res => {
       localStorage.setItem("token", res.data.body.token);
       dispatch({ type: "update", payload: res.data.body.token });
       navigate('/admin');

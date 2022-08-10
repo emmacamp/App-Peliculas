@@ -31,14 +31,14 @@ function index() {
           'success'
         )
         const id = e.target.id;
-        axios.delete(`https://proyectowebfinal-backend.herokuapp.com/trailer/delete/${id}`).then(() => {
+        axios.delete(`http://localhost:4000/trailer/delete/${id}`).then(() => {
           setVideosFilted(videos.filter(video => video._id !== id));
         });
       }
     })
 	};
 	useEffect(() => {
-		axios("https://proyectowebfinal-backend.herokuapp.com/trailer").then(res => {
+		axios("http://localhost:4000/trailer").then(res => {
 			setVideos(res.data.body);
 			setVideosFilted(res.data.body);
 		});

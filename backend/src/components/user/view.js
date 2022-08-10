@@ -18,6 +18,7 @@ router.post("/register", (req, res) => {
 
 router.post("/login", (req, res) => {
 	const { name, password } = req.body;
+	console.log(name, password);
 	controller
 		.login(name, password)
 		.then(data => {
