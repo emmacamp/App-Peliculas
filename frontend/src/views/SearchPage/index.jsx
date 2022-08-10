@@ -9,7 +9,7 @@ function index() {
 	const { search } = useParams();
 	const [results, setResults] = useState([]);
 	useEffect(() => {
-		axios.get(`https://proyectowebfinal-backend.herokuapp.com/trailer`).then(data => {
+		axios.get(`http://localhost:4000/trailer`).then(data => {
 			setResults(useFilter(data.data.body, search));
 		});
 	}, [search]);
