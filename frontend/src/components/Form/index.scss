@@ -3,7 +3,7 @@
 $gray: #27282d;
 $medium-gray: lighten(#27282d, 25%);
 $light-gray: lighten(#27282d, 65%);
-$gradient: linear-gradient(140deg, rgb(219, 98, 65) 0%, rgb(229, 91, 141) 100%);
+$gradient: linear-gradient(140deg, rgb(65, 165, 219) 0%, rgb(87, 29, 180) 100%);
 
 .Form {
 	h1 {
@@ -13,7 +13,7 @@ $gradient: linear-gradient(140deg, rgb(219, 98, 65) 0%, rgb(229, 91, 141) 100%);
 
 	.form {
 		background: $gray;
-		height: 340px;
+		height: 450px;
 		width: 520px;
 		margin: 0 auto;
 		border-radius: 5px;
@@ -55,7 +55,7 @@ $gradient: linear-gradient(140deg, rgb(219, 98, 65) 0%, rgb(229, 91, 141) 100%);
 		border-image-slice: 1;
 	}
 
-	input:focus + i {
+	input:focus+i {
 		color: $light-gray;
 	}
 
@@ -63,6 +63,7 @@ $gradient: linear-gradient(140deg, rgb(219, 98, 65) 0%, rgb(229, 91, 141) 100%);
 		color: $light-gray;
 		opacity: 0.4;
 	}
+
 	i {
 		color: $medium-gray;
 		position: absolute;
@@ -86,6 +87,7 @@ $gradient: linear-gradient(140deg, rgb(219, 98, 65) 0%, rgb(229, 91, 141) 100%);
 		box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.65);
 		transition: all 0.3s;
 	}
+
 	button:hover {
 		background: lighten($gray, 10%);
 		box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.65);
@@ -102,6 +104,7 @@ $gradient: linear-gradient(140deg, rgb(219, 98, 65) 0%, rgb(229, 91, 141) 100%);
 			width: 80%;
 			margin-bottom: 40px;
 		}
+
 		button {
 			margin-top: 10px;
 			margin-bottom: -20px;

@@ -38,8 +38,9 @@ function index({ type }) {
 
   return (
     <div className='Form'>
-      <h1>{typeTitle}</h1>
       <form className='form' autoComplete="off">
+        <img src="/src/assets/icons/user.png" alt="" />
+        <h1>{typeTitle}</h1>
         <div className="input-container">
           <input required type="text" placeholder="Username" name="name" autoComplete="off" value={form.name} onChange={handleChange} />
           <i className="zmdi zmdi-account zmdi-hc-lg"></i>

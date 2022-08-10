@@ -4,15 +4,23 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .not-found-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
   h1{
     font-size: 3rem;
     text-transform: uppercase;
+    color: #fff;
   }
   a{
     font-size: 24px;
-    border-radius: 15px;
+    
     padding: 0.5rem 1rem;
-    background: #2d15ff;
+    background: #00a9e1;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
