@@ -4,6 +4,7 @@ import axios from "axios";
 import useFilter from "./../../hook/useFilter";
 import Video from "../../components/AdminVideo";
 import Swal from "sweetalert2";
+import Icon from "./../../favicon.ico";
 import withReactContent from "sweetalert2-react-content";
 import "./index.scss";
 
@@ -46,11 +47,12 @@ function index() {
 	return (
 		<div className='admin'>
 			<div className='admin__header'>
-				<h1>Administrar Trailers</h1>
+				<img src={Icon} alt=""  className="icon"/>
+				<h3>Moflix Admin Server</h3>
 			</div>
 			<div className='admin__actions'>
 				<Link to='/admin/create'>
-					<button>Create Trailer</button>
+					<button>New Trailer</button>
 				</Link>
 					<input
 						type='text'

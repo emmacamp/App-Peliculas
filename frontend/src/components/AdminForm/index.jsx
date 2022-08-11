@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Icon from "../../assets/icons/page.png";
 
 import "./index.scss";
 function index({ type }) {
@@ -76,6 +77,7 @@ function index({ type }) {
 
 	return (
 		<div className='AdminForm'>
+			<img src={Icon} alt=""  className="icon-create" />
 			<h1>{typeTitle}</h1>
 			<form onSubmit={handleSubmit}>
 				<div className='row1'>
