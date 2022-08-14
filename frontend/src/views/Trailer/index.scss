@@ -1,7 +1,33 @@
+
+@mixin responsive($size) {
+  $screen_sizes: (
+      phone: "600px",
+      tablet: " 800px",
+      small: " 900px",
+      medium: " 1250px",
+      large: " 1600px",
+    );
+  $query_value: map-get($screen_sizes, $size);
+  
+  @media screen and (max-width: $query_value) {
+  
+      @content;
+    }
+   
+
+}
+
+
+
+
 .trailer{
   width: 90%;
   margin: 30px auto;
   color: #ebebeb;
+  @include responsive(tablet){
+      background-color: red !important;
+  }
+
   &__info{
     display: flex;
     gap: 20px;
@@ -14,10 +40,12 @@
         height: 100%;
         width: 100%;
         border-radius: 15px;
-        overflow: hidden;
+
+
       }
     }
     &__description{
+      width: 70%;
       .titulo{
         font-size: 1.5rem;
         font-weight: bold;
@@ -31,6 +59,14 @@
           font-weight: bold;
         }
       }
+
+      p{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        width: 70%;
+        text-align: justify;
+        
+      }
     }
   }
   &__video{
@@ -42,4 +78,6 @@
     }
   }
 }
+
+
 
