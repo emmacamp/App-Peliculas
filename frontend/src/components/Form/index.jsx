@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from 'react'
 import './index.scss'
 import { useContext } from '../../Context';
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 function index({ type }) {
   const [form, setForm] = useState({
@@ -18,14 +20,24 @@ function index({ type }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!form.name || !form.password) {
-      alert("Debe de llenar todos los campos");
+      Swal.fire({
+        title: 'Error',
+        text: 'Todos los campos son obligatorios',
+        icon: 'error',
+      })
       return;
     }
     axios.post('http://localhost:4000/user/' + typeURL, form).then(res => {
       localStorage.setItem("token", res.data.body.token);
       dispatch({ type: "update", payload: res.data.body.token });
       navigate('/admin');
-    });
+    }).catch(err => {
+      Swal.fire({
+        title: 'Error',
+        text: 'Usuario o contraseña incorrectos',
+        icon: 'error',
+      })
+    }); 
   };
 
   const handleChange = (e) => {

@@ -44,6 +44,7 @@ function index() {
 			setVideosFilted(res.data.body);
 		});
 	}, []);
+	
 	return (
 		<div className='admin'>
 			<div className='admin__header'>
