@@ -1,5 +1,6 @@
 const model = require("./model");
 
+/* A function that is returning a promise. */
 function addTrailer(actores, titulo, año, director, reseña, src, portada) {
   return new Promise((resolve, reject) => {
     if (!titulo || !año || !director || !reseña) {

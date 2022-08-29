@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import placeholder from "../../assets/img/placeholder.jpg";
 
+/* A function that is being exported. */
 function index(props) {
 	const { reseña, portada, titulo, actores, año, id } = props;
 
