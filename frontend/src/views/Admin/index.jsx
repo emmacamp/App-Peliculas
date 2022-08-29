@@ -4,8 +4,8 @@ import axios from "axios";
 import useFilter from "./../../hook/useFilter";
 import Video from "../../components/AdminVideo";
 import Swal from "sweetalert2";
-import Icon from "./../../favicon.ico";
 import withReactContent from "sweetalert2-react-content";
+import Icon from "./../../favicon.ico";
 import "./index.scss";
 
 function index() {

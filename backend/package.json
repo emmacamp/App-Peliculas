@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "alguito loco ahi",
+  "description": "Backend for the application",
   "main": "src/index.js",
   "engines": {
     "node": "14.x"
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "heger arias santos",
+  "author": "Emmanuel Popa and Kiancis Dominguez",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
