@@ -3,6 +3,10 @@ import ProtectedRoute from "./ProtectedRoute";
 import Layout from "./Layout";
 import { lazy, Suspense, useEffect } from "react";
 import Loading from "../views/Loading";
+import ReactGA from "react-ga";
+
+const trackingId = "G-H5BB3CVV47"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
 
 const Home = lazy(() => import("../views/Home"));
 const Nuevo = lazy(() => import("../views/Nuevo"));
