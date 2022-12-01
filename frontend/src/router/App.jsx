@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import Layout from "./Layout";
 import { lazy, Suspense, useEffect } from "react";
-import Loading from "../views/Loading";
-import ReactGA from "react-ga";
+import Loading from "../views/Loading"; import ReactGA from "react-ga";
+
 
 const trackingId = "G-H5BB3CVV47"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);

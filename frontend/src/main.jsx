@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 import App from './router/App'
 import './styles/global.scss'
 import 'sweetalert2/src/sweetalert2.scss'
+require("react-ga").initialize("G-H5BB3CVV47");
 
 ReactDOM.render(
   <React.StrictMode>
