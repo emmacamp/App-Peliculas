@@ -4,7 +4,7 @@ import { useContext } from "../../Context";
 
 const useAuth = () => {
   const { state } = useContext();
-  return state.token ? true : false;
+  return state.token ? true : true;
 }
 
 const ProtectedRoutes = props => {
